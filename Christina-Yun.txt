@@ -1,0 +1,116 @@
+Link to completed codepen: https://codepen.io/stinabitten/pen/abWNzYb
+
+
+Questions and answers:
+1. What is Semantic HTML?
+    A: Semantic HTML is HTML that makes it clear what it's marking up -- the name of it states the purpose (e.g. header, body, h1, etc.)
+2. What is HTML used for? 
+    A: HTML is used to tell the web browser what to display and how to display it.
+3. What is an attribute and where do we put it? 
+    A: An attribute is something used to include information in an element that we don't want to render visually on the page.
+4. What is the h1 tag used for? How many times should I use it on a page?
+    A: h1 tags are used for the title/name of the webpage and should only be used once per page.
+5. Name two tags that have required attributes
+    A: Anchor <a> tags require an href tag in order to use it, and images <img> tags will always require a source (src) attribute.
+6. What do we put in the head of our HTML document? 
+    A: Metadata about the document, which is information important to help render the page but is not displayed. This includes language, styles, scripts, and chacater sets.
+7. What is an id? 
+    A: An id is an identifier to differentiate generic tags in HTML and identify them for targeted styling in CSS. It is also used by JavaScript to access and manipulate that element.
+8. What elements can I add an id to? 
+    A:  You can add ids to any element in html.
+9. How many times can I use the same id on a page? 
+    A: You can only use one unique id per one thing (you cannot use an id to apply to many different things.)
+10. What is a class? 
+    A: A class is an identifier to differentiate generic tags in HTML for use in CSS styling.
+11. What elements can I add a class to? 
+    A: Class attributes can be added to any element in HTML.
+12. How many times can I use the same class on a page? 
+    A: As many times as you like! Classes are good for when you have many different elements throughout the page that you want to have the same styling.
+13. How do I get my link to open in a new tab?
+    A: You write "target = "_blank"
+14. What is the alt attribute in the image tag used for? 
+    A: The alt attribute is used to describe what the image is in case something happens and the image is broken/not rendering for some reason.
+15. How do I reference an id?
+    A: You reference an id in CSS or Javascript by using #name.
+16. What is the difference between a section and a div
+    A: A section visually groups the content inside together. A div doesn't do anything on its own and is a container that can be used for anything when styling in CSS.
+17. What is CSS used for? 
+    A: CSS is used for styling HTML tags on webpages.
+18. How do we select an element? Example - every h2 on the page
+    A: h2 { property: desiredproperty;}
+19. What is the difference between a class and an id? - Give me an example of when I might use each 
+one
+    A: A class can be used to group different aspects of a page to have uniform design and formatting, whereas an id can do all those things, but can only be used once. An id can also be used to connect the webpage to Javascript. 
+20. How do we select classes in CSS?
+    A: By use of a period (e.g. .class)
+21. How do we select a p element with a single class of “human””?
+    A: p.human 
+22. What is a parent child selector? When would this be useful? 
+    A: It's a selector that selects and styles every element meets a certain condition. This would be really useful when you have multiple elements under a certain parent that need to be styled a certain way.
+23. How do you select all links within a div with the class of sidebar?
+    A: div a.sidebar  
+24. What is a pseudo selector?
+    A: A class that specifies a special state of the selected element (e.g. hover, on-click, etc.)
+25. What do we use the change the spacing between lines?
+    A: line-height:
+26. What do we use to change the spacing between letters?
+    A: letter-spacing: 
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    A: text-transform: uppercase/lowercase/capitalize
+28. How do I add a 1px border around my div that is dotted and black?
+    A: div {
+        border: 1px dotted black 
+    }
+29. How do I select everything on the page? 
+    A: ctrl+a
+30. How do I write a comment in CSS?
+    A: /* comment */
+31. How do I find out what file I am in, when I am using the command line?
+    A: Command "pwd" which means print work directory -- will display the path to your location.
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    A: Command "ls" which means list files -- will display all the files in that directory.
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    A: Command "rm 'name of file'" where rm = remove. You have to be careful because there's no "are you sure" prompt and it doesn't go to recycle bin.
+34. Why should I use version control?
+    A:  1. It can help you track what is or isn't working when writing a program
+        2. When collaborating with others, version control is extremely important to know who did what, esp. if broken and at what point things got broken. 
+35. How often should I commit to github?
+    A: As often as possible! 
+36. What is the command we would use to push our repo up to github? 
+    A: git push -u origin branchname
+37. Walk me through Lambda's git flow. 
+    A: 
+    Git Push Directions:
+1. Fork original repo
+2. Copy the clone link for the repo
+3. Open iTerm and make sure that it’s in the folder that you want to put the Git repo
+4. Clone the repo
+    1.  git clone clonelink
+5. Access the repo folder
+    1. cd reponame
+6. Branch the project and name the branch to your name (or whatever)
+    1. git checkout -b christina-yun
+7. Optional: Add whatever needs to be added (e.g. directories and files)
+    1. touch filename.ext
+    2. mkdir directoryname
+8. Open git repo in VS Code
+    1. code .
+9. Work on code in VS Code and save it.
+10. Go back to the terminal and check status to make sure the modification is actually done.
+    1. git status
+11. Add all the changes
+    1. git add .
+12. Optional: Check git status again and the change should show in green. This is considered “staged”
+    1. git status
+13. Write a commit message
+    1. git commit -m “specific helpful notes that will be easily recognized”
+14. Push it upstream (if it’s the first time, it creates the branch remotely and then pushing to it)
+    1. git push -u origin branchname
+15. Go back to Github (should have a notification that a push happened.)
+
+Git Pull Directions:
+1. Go to Github and click on the branchname
+2. Click New Pull Request
+3. Confirm that base repository is your own copy (confirm it’s not Lambda/company’s/someone else’s repository) — Should still say master
+4. Create pull request based on below: 
+    1. Base: Master | Compare: yourbranch
